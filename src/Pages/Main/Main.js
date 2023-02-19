@@ -11,6 +11,7 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 import Footer from "../../Components/Footer/Footer";
 import { useSelector } from "react-redux";
 import BurgerModal from "../../Components/Modal/BurgerModal";
+import Card from "../../Components/HowItsWorks/Card";
 
 export default function Main() {
   const burger = useSelector((state) => state.helpers.burger);
@@ -25,8 +26,9 @@ export default function Main() {
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover">
         <About />
       </div>
-      <div>
+      <div class="bg-Frame6 flex  bg-cover">
         <HowItsWorks />
+        {/* <Card /> */}
       </div>
       <div class="bg-questionImage  bg-[length:100%_3024px]">
         <Question />

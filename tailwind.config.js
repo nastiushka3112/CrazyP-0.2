@@ -12,6 +12,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        Frame6: "url('/src/Components/Theme/Img/Frame6.png')",
         samurai: "url('/src/Components/Theme/Img/samurai.png')",
         headImage: "url('/src/Components/Theme/Img/background2.png')",
         variant1: "url('/src/Components/Theme/Img/variant1.png')",
