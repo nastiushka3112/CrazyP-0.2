@@ -12,6 +12,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        samurai: "url('/src/Components/Theme/Img/samurai.png')",
         headImage: "url('/src/Components/Theme/Img/background2.png')",
         variant1: "url('/src/Components/Theme/Img/variant1.png')",
         variant2: "url('/src/Components/Theme/Img/Variant2.png')",
@@ -24,6 +25,7 @@ module.exports = {
       colors: {
         "main-color": "#2D061B",
         "text-color": "#433E3E",
+        regular: "#EBB268",
         "regular-blue": "#3C6772",
         "f-white": "#FFF7E9",
         "t-pink": "#FDE3B5",

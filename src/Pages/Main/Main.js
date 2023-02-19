@@ -22,8 +22,10 @@ export default function Main() {
         {burger && <BurgerModal />}
         <HeaderRescription />
       </div>
-      <div class="bg-gradient-to-b from-f-white to-t-pink flex justify-center flex-col pb-[80px]">
+      <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover">
         <About />
+      </div>
+      <div>
         <HowItsWorks />
       </div>
       <div class="bg-questionImage  bg-[length:100%_3024px]">
