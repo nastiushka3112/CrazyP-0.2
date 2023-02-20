@@ -4,13 +4,13 @@ export default function Card({ name, text }) {
   const [open, setOpen] = useState(false);
   return (
     <div
-      class="cursor-pointer flex max-w-[535px] rounded-[16px] border-[2px] border-[#2D061B] bg-regular px-[24px] py-[35px] mx-[24px] my-[20px] "
+      class="cursor-pointer flex flex-col w-[535px] rounded-[16px] border-[2px] border-[#2D061B] bg-regular px-[24px] py-[35px] mx-[24px] my-[20px] "
       onClick={() => {
         setOpen(!open);
       }}
     >
-      <h2>{name}</h2>
-      {open && <p>{text}</p>}
+      <h2 class="text-main-color text-[36px] font-second">{name}</h2>
+      {open && <p class="text-[#F2ECEC] text-[16px] font-main">{text}</p>}
     </div>
   );
 }

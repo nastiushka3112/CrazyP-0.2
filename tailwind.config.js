@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       main: "Gilroy",
+      second: "Gilroy-semibold",
       body: "Benegraphic",
       about: "QuigleyWiggly",
       mainText: "Passion One",
