@@ -25,7 +25,7 @@ export default function Main() {
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover">
         <About />
       </div>
-      <div class="bg-Frame6 flex  bg-cover h-[1700px]">
+      <div class="bg-Frame6 flex  bg-cover xl:h-[1700px]">
         <HowItsWorks />
       </div>
       <div class="bg-questionImage  bg-[length:100%_3024px]">

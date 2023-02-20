@@ -41,7 +41,7 @@ const data = [
 
 export default function HowItsWorks() {
   return (
-    <div class="flex flex-col justify-center items-start mt-[200px] mb-[233px] relative">
+    <div class="flex flex-col justify-center items-center mt-[200px] mb-[233px] relative">
       <div class="flex flex-col justify-start items-center  bg-[#F9E2BB] pt-[34px] pl-[129px] w-[1020px] h-[1260px]">
         <div class="flex flex-col justify-start items-start">
           <h2 class="text-[#433E3E] text-[64px] font-about float-right">
@@ -58,7 +58,7 @@ export default function HowItsWorks() {
           />
         </div>
       </div>
-      <div class="absolute left-[55em] top-[20%]">
+      <div class="xl:absolute xl:top-[20%] 2xl:left-[55em] 2xl:top-[20%] xl:left-[49em] relative">
         {data.map((el) => (
           <Card name={el.name} text={el.text} />
         ))}
