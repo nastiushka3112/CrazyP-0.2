@@ -46,13 +46,13 @@ const textData = [
 
 export default function Question() {
   return (
-    <div class="pt-[330px] flex flex-col justify-center items-center">
+    <div class="pt-[145px] pb-[178px] flex flex-col justify-center items-center">
       <div>
         <h2 class="text-regular text-[64px] font-about">
           Frequently asked questions
         </h2>
       </div>
-      <div class="flex flex-wrap justify-center">
+      <div class="flex flex-wrap justify-center z-10">
         <div class="flex flex-col">
           {textData
             .map((el) => (

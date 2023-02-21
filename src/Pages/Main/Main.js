@@ -28,8 +28,14 @@ export default function Main() {
       <div class="bg-Frame6 flex  bg-cover xl:h-[1700px]">
         <HowItsWorks />
       </div>
-      <div class="bg-questionImage  bg-[length:100%_3024px]">
+      <div class="bg-bg-main relative  overflow-hidden">
+        <span class="absolute top-0 bg-regular w-[100%] h-[1px]" />
+        <div class="w-[582px] h-[582px] border-[1px]  border-regular rounded-full absolute top-[-8em] right-[-12em] z-0" />
+				<div class="w-[582px] h-[582px] border-[1px]  border-regular rounded-full absolute bottom-[-8em] left-[-12em] z-0" />
         <Question />
+        <span class="absolute bottom-0 bg-regular w-[100%] h-[1px]" />
+      </div>
+      <div>
         <ShowCase />
         <Testimonials />
         <Footer />
