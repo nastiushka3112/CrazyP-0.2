@@ -29,13 +29,13 @@ export default function Main() {
         <HowItsWorks />
       </div>
       <div class="bg-bg-main relative  overflow-hidden">
-        <span class="absolute top-0 bg-regular w-[100%] h-[1px]" />
-        <div class="w-[582px] h-[582px] border-[1px]  border-regular rounded-full absolute top-[-8em] right-[-12em] z-0" />
-				<div class="w-[582px] h-[582px] border-[1px]  border-regular rounded-full absolute bottom-[-8em] left-[-12em] z-0" />
+        <span class="absolute top-0 bg-regular w-[100%] h-[1px] opacity-[0.4]" />
+        <div class="w-[582px] h-[582px] border-[1px]  border-[regular] rounded-full absolute top-[-8em] right-[-12em] z-0 opacity-[0.4]" />
+        <div class="w-[582px] h-[582px] border-[1px]  border-regular rounded-full absolute bottom-[-8em] left-[-12em] z-0 opacity-[0.4]" />
         <Question />
-        <span class="absolute bottom-0 bg-regular w-[100%] h-[1px]" />
+        <span class="absolute bottom-0 bg-regular w-[100%] h-[1px] opacity-[0.4]" />
       </div>
-      <div>
+      <div class="bg-testimonials bg-cover overflow-hidden">
         <ShowCase />
         <Testimonials />
         <Footer />
