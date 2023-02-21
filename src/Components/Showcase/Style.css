@@ -18,6 +18,7 @@
 }
 
 .pagination {
+  cursor: pointer;
   display: flex;
   gap: 6px;
   margin-top: 29px;

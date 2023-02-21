@@ -29,7 +29,7 @@ export default function Testimonials() {
   return (
     <div>
       <div class="pt-[200px] flex flex-col justify-center items-center">
-        <h2 class="text-[#FFFFFF] text-[64px] font-about">Testimonials</h2>
+        <h2 class="text-regular text-[64px] font-about">Testimonials</h2>
       </div>
       <Swiper
         watchSlidesProgress={true}
