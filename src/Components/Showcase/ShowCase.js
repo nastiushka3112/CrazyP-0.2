@@ -10,7 +10,7 @@ export default function ShowCase() {
     <div class="flex justify-center items-center mt-[200px]">
       <div class="bg-showcase bg-cover w-[100%] h-[565px] flex justify-between rounded-[24px] items-center pl-[64px] pr-[32px] pt-[91px]">
         <div class="max-w-[582px]">
-          <h2 class="text-[#FFFFFF] text-[64px] font-about">Showcase</h2>
+          <h2 class="text-main-color text-[64px] font-about">Showcase</h2>
           <p class="text-[#FFFFFF] text-[20px] font-main">
             Here, you can see examples of the personalized storybooks that we
             have created for our satisfied customers. Get a sense of the variety
@@ -20,11 +20,13 @@ export default function ShowCase() {
         </div>
         <div class="w-[338px] h-[90%]">
           <Swiper
-            pagination={true}
-            bulletClass="activeBullet"
-            bulletActiveClass="activeBullet"
-            dynamicMainBullets={5}
-            dynamicBullets={true}
+            pagination={{
+              el: ".pagination",
+              type: "bullets",
+              clickable: true,
+              bulletClass: "bullet",
+              bulletActiveClass: "activeBullet",
+            }}
             modules={[Pagination]}
           >
             <SwiperSlide>
@@ -41,13 +43,24 @@ export default function ShowCase() {
                 alt="Scene"
               />
             </SwiperSlide>
-            <SwiperSlide>33333</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <img
+                class="w-[255px] h-[369px]"
+                src={require("../Theme/Img/Scene.png")}
+                alt="Scene"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <img
+                class="w-[255px] h-[369px]"
+                src={require("../Theme/Img/35795.png")}
+                alt="Scene"
+              />
+            </SwiperSlide>
             <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <div className="pagination"></div>
           </Swiper>
         </div>
       </div>
