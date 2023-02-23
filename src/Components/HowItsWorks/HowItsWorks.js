@@ -54,7 +54,7 @@ export default function HowItsWorks() {
           <img
             src={require("../Theme/Img/5021.png")}
             alt="HowItWorks"
-            class="max-w-[600px] max-h-[840] mt-[72px]"
+            class="max-w-[400px] sm:max-w-[600px] max-h-[840] mt-[72px]"
           />
         </div>
       </div>

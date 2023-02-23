@@ -5,10 +5,11 @@ import "swiper/css/pagination";
 import "./Style.css";
 import { Pagination } from "swiper";
 
+
 export default function ShowCase() {
   return (
     <div class="flex justify-center items-center mt-[200px]">
-      <div class="bg-showcase bg-cover w-[100%] h-[565px] flex justify-between rounded-[24px] items-center pl-[64px] pr-[32px] pt-[91px]">
+      <div class="bg-showcase bg-cover w-[100%] h-[565px] flex justify-between rounded-[24px] items-center sm:pl-[64px] pr-[32px] pt-[91px]">
         <div class="max-w-[582px]">
           <h2 class="text-main-color text-[64px] font-about">Showcase</h2>
           <p class="text-[#FFFFFF] text-[20px] font-main">
@@ -32,19 +33,11 @@ export default function ShowCase() {
             <SwiperSlide>
               <img
                 class="w-[255px] h-[369px]"
-                src={require("../Theme/Img/Scene.png")}
-                alt="Scene"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                class="w-[255px] h-[369px]"
                 src={require("../Theme/Img/35795.png")}
                 alt="Scene"
               />
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <img
                 class="w-[255px] h-[369px]"
                 src={require("../Theme/Img/Scene.png")}
@@ -52,7 +45,6 @@ export default function ShowCase() {
               />
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <img
                 class="w-[255px] h-[369px]"
                 src={require("../Theme/Img/35795.png")}

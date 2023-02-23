@@ -41,8 +41,8 @@ export default function Testimonials() {
         }}
       >
         {data.map((el) => (
-          <SwiperSlide>
-            <Card text={el.text} key={Math.random()} />
+          <SwiperSlide key={Math.random()}>
+            <Card text={el.text} />
           </SwiperSlide>
         ))}
       </Swiper>
