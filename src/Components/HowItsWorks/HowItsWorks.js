@@ -60,7 +60,7 @@ export default function HowItsWorks() {
       </div>
       <div class="xl:absolute xl:top-[20%] 2xl:left-[55em] 2xl:top-[20%] xl:left-[49em] relative">
         {data.map((el) => (
-          <Card name={el.name} text={el.text} />
+          <Card name={el.name} text={el.text} key={Math.random()} />
         ))}
       </div>
     </div>

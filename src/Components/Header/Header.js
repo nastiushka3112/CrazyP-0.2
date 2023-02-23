@@ -32,22 +32,20 @@ export default function Header() {
                 AI Avatars
               </a>
             </li>
+            <li class="cursor-pointer">
+              <a href="/" class="font-main text-white text-lg">
+                Blog
+              </a>
+            </li>
+            <li class="cursor-pointer">
+              <a href="/" class="font-main text-white text-lg">
+                Order tracking
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="items-center lg:flex hidden">
-        <ul class="flex items-center gap-8">
-          <li class="cursor-pointer">
-            <a href="/" class="font-main text-white text-lg">
-              Blog
-            </a>
-          </li>
-          <li class="cursor-pointer">
-            <a href="/" class="font-main text-white text-lg">
-              Order tracking
-            </a>
-          </li>
-        </ul>
         <button
           class="btn flex items-center justify-center ml-[32px] "
           onClick={() => {

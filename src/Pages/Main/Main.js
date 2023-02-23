@@ -20,7 +20,8 @@ export default function Main() {
         {burger && <BurgerModal />}
         <HeaderRescription />
       </div>
-      <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover">
+      <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
+        {/* <div class="w-[221px] h-[221px] border-[1px]  border-regular rounded-full absolute top-[-7.93%] right-[-5.42%] z-0 opacity-[0.4]" /> */}
         <About />
       </div>
       <div class="bg-Frame6 flex  bg-cover xl:h-[1700px]">
