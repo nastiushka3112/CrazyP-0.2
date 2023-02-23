@@ -4,7 +4,7 @@ export default function Card({ name, text }) {
   const [open, setOpen] = useState(false);
   return (
     <div
-      class="cursor-pointer flex flex-col max-w-[535px] rounded-[16px] border-[2px] border-[#2D061B] bg-regular px-[24px] py-[35px] mx-[24px] my-[20px] "
+      class="cursor-pointer flex flex-col min-[1390px]:w-[535px] rounded-[16px] border-[2px] border-[#2D061B] bg-regular px-[24px] py-[35px] mx-[24px] my-[20px] "
       onClick={() => {
         setOpen(!open);
       }}
