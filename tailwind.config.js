@@ -31,7 +31,6 @@ module.exports = {
         "regular-blue": "#3C6772",
         "f-white": "#FFF7E9",
         "t-pink": "#FDE3B5",
-        "bg-card": "rgba(122, 181, 159, 0.3)",
         "bg-main": "#2D061B",
         modal: "rgba(0, 0, 0, 0.62)",
       },
