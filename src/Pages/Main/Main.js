@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import HeaderRescription from "../../Components/Header/HeaderRescription";
 import About from "../../Components/About/About";
-import Benefits from "../../Components/Benefits/Benefits";
-import Variants from "../../Components/Benefits/Variants";
 import HowItsWorks from "../../Components/HowItsWorks/HowItsWorks";
 import Question from "../../Components/Question/Question";
 import ShowCase from "../../Components/Showcase/ShowCase";
