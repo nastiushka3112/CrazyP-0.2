@@ -4,7 +4,7 @@ export default function Benefits() {
   return (
     <div class="pt-[100px] flex flex-col justify-center items-center w-[95%]">
       <div class="flex flex-col justify-center items-center  max-w-[883px]">
-        <h2 class="font-mainText text-regular text-[64px] leading-[77px] mb-[24px] ">
+        <h2 class="font-mainText text-regular text-[48px] leading-[77px] mb-[24px] ">
           Benefits
         </h2>
         <p class="font-textSec text-[20px] text-white text-center">

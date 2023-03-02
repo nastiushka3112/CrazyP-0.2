@@ -5,14 +5,13 @@ import "swiper/css/pagination";
 import "./Style.css";
 import { Pagination } from "swiper";
 
-
 export default function ShowCase() {
   return (
     <div class="flex justify-center items-center mt-[200px]">
       <div class="bg-showcase bg-cover w-[100%] h-[565px] flex justify-between rounded-[24px] items-center sm:pl-[64px] pr-[32px] pt-[91px]">
         <div class="max-w-[582px]">
-          <h2 class="text-main-color text-[64px] font-about">Showcase</h2>
-          <p class="text-[#FFFFFF] text-[20px] font-main">
+          <h2 class="text-main-color text-[48px] font-mainText">Showcase</h2>
+          <p class="text-[#FFFFFF] text-[20px] font-textSec">
             Here, you can see examples of the personalized storybooks that we
             have created for our satisfied customers. Get a sense of the variety
             and quality of the books we create, and see the possibilities for

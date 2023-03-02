@@ -11,6 +11,7 @@ module.exports = {
       about: "QuigleyWiggly",
       mainText: "Passion One",
       textSec: "Roboto",
+      textBtn: "Poppins",
     },
     extend: {
       backgroundImage: {
@@ -54,7 +55,7 @@ module.exports = {
           top: "20px",
           background: "#EBB268",
           borderRadius: "199px",
-          fontFamily: "Gilroy",
+          fontFamily: "Poppins",
           fontStyle: "normal",
           fontWeight: "700",
           fontSize: "18px",
@@ -71,7 +72,7 @@ module.exports = {
           top: "20px",
           border: "4px solid #EBB268",
           borderRadius: "199px",
-          fontFamily: "Gilroy",
+          fontFamily: "Poppins",
           fontStyle: "normal",
           fontWeight: "700",
           fontSize: "18px",

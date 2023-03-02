@@ -44,10 +44,10 @@ export default function HowItsWorks() {
     <div class="flex flex-col justify-center items-center mt-[200px] mb-[233px] relative">
       <div class="flex flex-col justify-start items-center  bg-[#F9E2BB] pt-[34px] md:pl-[129px] max-w-[1020px] h-[1260px]">
         <div class="flex flex-col justify-start items-start">
-          <h2 class="text-[#433E3E] text-[64px] font-about float-right">
+          <h2 class="text-[#433E3E] text-[48px] font-mainText float-right">
             How it works?
           </h2>
-          <p class="font-main text-[24px] text-[#433E3E] max-w-[731px]">
+          <p class="font-textSec text-[20px] text-[#433E3E] max-w-[731px] pr-[20%]">
             At CrazyPrints, creating your own personalized storybook is easy and
             fun. Here's how it works:
           </p>
