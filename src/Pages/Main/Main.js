@@ -6,7 +6,6 @@ import HowItsWorks from "../../Components/HowItsWorks/HowItsWorks";
 import Question from "../../Components/Question/Question";
 import ShowCase from "../../Components/Showcase/ShowCase";
 import Testimonials from "../../Components/Testimonials/Testimonials";
-import Footer from "../../Components/Footer/Footer";
 import { useSelector } from "react-redux";
 import BurgerModal from "../../Components/Modal/BurgerModal";
 import Benefits from "../../Components/Benefits/Benefits";
@@ -42,7 +41,6 @@ export default function Main() {
       <div class="bg-testimonials bg-cover overflow-hidden">
         <ShowCase />
         <Testimonials />
-        <Footer />
       </div>
     </div>
   );

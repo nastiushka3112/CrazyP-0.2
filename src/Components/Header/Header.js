@@ -2,13 +2,14 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { openModal, openBurger } from "../../store/helpers/helpersSlice";
 import Hamburger from "hamburger-react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const dispatch = useDispatch();
   const burger = useSelector((state) => state.helpers.burger);
 
   return (
-    <div class="flex items-center justify-between mx-[64px] pt-[20px]">
+    <div class="flex items-center justify-between mx-[64px] pt-[20px] w-[90%] absolute">
       <div class="items-center flex">
         <div class="cursor-pointer">
           <a href="/">
@@ -46,14 +47,16 @@ export default function Header() {
         </div>
       </div>
       <div class="items-center lg:flex hidden">
-        <button
-          class="btn flex items-center justify-center ml-[32px] "
-          onClick={() => {
-            dispatch(openModal(true));
-          }}
-        >
-          Get started now
-        </button>
+        <NavLink to={"/create"}>
+          <button
+            class="btn flex items-center justify-center ml-[32px] "
+            // onClick={() => {
+            //   dispatch(openModal(true));
+            // }}
+          >
+            Start to Create a Book
+          </button>
+        </NavLink>
       </div>
       <div class="items-center lg:hidden flex">
         <Hamburger
