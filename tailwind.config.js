@@ -10,6 +10,7 @@ module.exports = {
       body: "Benegraphic",
       about: "QuigleyWiggly",
       mainText: "Passion One",
+      textSec: "Roboto",
     },
     extend: {
       backgroundImage: {
