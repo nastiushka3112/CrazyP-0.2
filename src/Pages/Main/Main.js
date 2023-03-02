@@ -9,6 +9,7 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 import Footer from "../../Components/Footer/Footer";
 import { useSelector } from "react-redux";
 import BurgerModal from "../../Components/Modal/BurgerModal";
+import Benefits from "../../Components/Benefits/Benefits";
 
 export default function Main() {
   const burger = useSelector((state) => state.helpers.burger);
@@ -21,8 +22,12 @@ export default function Main() {
         <HeaderRescription />
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
-        {/* <div class="w-[221px] h-[221px] border-[1px]  border-regular rounded-full absolute top-[-7.93%] right-[-5.42%] z-0 opacity-[0.4]" /> */}
+        <div class="w-[100%] h-[1px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />
         <About />
+      </div>
+      <div class="bg-main-color">
+        <div class="w-[100%] h-[0px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />
+        <Benefits />
       </div>
       <div class="bg-Frame6 flex  bg-cover xl:h-[1700px]">
         <HowItsWorks />

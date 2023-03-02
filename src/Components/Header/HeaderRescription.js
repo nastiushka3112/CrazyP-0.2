@@ -17,14 +17,24 @@ export default function HeaderRescription() {
         two books are alike. And with our high-quality printing, your book will
         be a keepsake to treasure for years to come.
       </p>
-      <button
-        class="btn flex items-center justify-center"
-        onClick={() => {
-          dispatch(openModal(true));
-        }}
-      >
-        Get started now!
-      </button>
+      <div class="flex items-center gap-[24px]">
+        <button
+          class="btn-second flex items-center justify-center"
+          onClick={() => {
+            dispatch(openModal(true));
+          }}
+        >
+          Learn More
+        </button>
+        <button
+          class="btn flex items-center justify-center"
+          onClick={() => {
+            dispatch(openModal(true));
+          }}
+        >
+          Start to Create a Book
+        </button>
+      </div>
     </div>
   );
 }
