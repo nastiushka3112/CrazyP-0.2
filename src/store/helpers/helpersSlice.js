@@ -4,6 +4,7 @@ const initialState = {
   modal: false,
   burger: false,
   mobile: true,
+  page: null,
 };
 
 const helpersSlice = createSlice({
@@ -19,9 +20,13 @@ const helpersSlice = createSlice({
     openBurger(state, action) {
       state.burger = action.payload;
     },
+    setPage(state, action) {
+      state.page = action.payload;
+    },
   },
 });
 
-export const { openModal, addMobile, openBurger } = helpersSlice.actions;
+export const { openModal, addMobile, openBurger, setPage } =
+  helpersSlice.actions;
 
 export default helpersSlice.reducer;

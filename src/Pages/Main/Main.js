@@ -1,23 +1,29 @@
-import React from "react";
-import Header from "../../Components/Header/Header";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+// import Header from "../../Components/Header/Header";
 import HeaderRescription from "../../Components/Header/HeaderRescription";
 import About from "../../Components/About/About";
 import HowItsWorks from "../../Components/HowItsWorks/HowItsWorks";
 import Question from "../../Components/Question/Question";
 import ShowCase from "../../Components/Showcase/ShowCase";
 import Testimonials from "../../Components/Testimonials/Testimonials";
-import { useSelector } from "react-redux";
-import BurgerModal from "../../Components/Modal/BurgerModal";
+// import BurgerModal from "../../Components/Modal/BurgerModal";
 import Benefits from "../../Components/Benefits/Benefits";
+import { setPage } from "../../store/helpers/helpersSlice";
 
 export default function Main() {
-  const burger = useSelector((state) => state.helpers.burger);
+  // const burger = useSelector((state) => state.helpers.burger);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setPage("main"));
+  }, []);
 
   return (
     <div>
       <div class="bg-headImage bg-co bg-cover bg-center">
-        <Header />
-        {burger && <BurgerModal />}
+        {/* <Header />
+        {burger && <BurgerModal />} */}
         <HeaderRescription />
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
