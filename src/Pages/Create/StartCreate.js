@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../store/helpers/helpersSlice";
-import Step1 from "./Steps/Step1";
-import Step2 from "./Steps/Step2";
+import Step1 from "../../Components/Steps/Step1";
+import Step2 from "../../Components/Steps/Step2";
 
 export default function StartCreate() {
   const dispatch = useDispatch();

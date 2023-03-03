@@ -1,7 +1,7 @@
 import React from "react";
-import Variants from "../Variants";
+import Variants from "./Variants";
 import { useDispatch, useSelector } from "react-redux";
-import { setStep } from "../../../store/helpers/helpersSlice";
+import { setStep } from "../../store/helpers/helpersSlice";
 
 const data = [
   "Action-Adventure",
@@ -57,7 +57,7 @@ export default function Step1() {
         <button
           class="btn flex items-center"
           onClick={() => {
-            dispatch(setStep((step + 1)));
+            dispatch(setStep(step + 1));
           }}
         >
           next
