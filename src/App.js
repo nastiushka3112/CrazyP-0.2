@@ -11,7 +11,7 @@ function App() {
   const burger = useSelector((state) => state.helpers.burger);
 
   return (
-    <div class="m-0">
+    <div class="m-0 relative">
       <Header />
       {burger && <BurgerModal />}
       <AppRoutes />

@@ -9,5 +9,14 @@ export default function StartCreate() {
     dispatch(setPage("create"));
   }, []);
 
-  return <div class="h-[1000px] pt-[320px]">StartCreate</div>;
+  return (
+    <div style={{ minHeight: "calc(100vh - 89px)" }}>
+      <img
+        class="w-[100%]"
+        src={require("../../Components/Theme/Img/createP.png")}
+        alt="headImage"
+      />
+      <div class=""> StartCreate</div>
+    </div>
+  );
 }

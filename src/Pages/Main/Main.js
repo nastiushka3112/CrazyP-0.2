@@ -44,7 +44,7 @@ export default function Main() {
         <Question />
         <span class="absolute bottom-0 bg-regular w-[100%] h-[1px] opacity-[0.4]" />
       </div>
-      <div class="bg-testimonials bg-cover overflow-hidden">
+      <div class="bg-testimonials bg-cover overflow-hidden pb-[234px]">
         <ShowCase />
         <Testimonials />
       </div>
