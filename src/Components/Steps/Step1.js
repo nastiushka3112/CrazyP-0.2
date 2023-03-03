@@ -21,11 +21,6 @@ export default function Step1() {
   const step = useSelector((state) => state.helpers.step);
   return (
     <div class="items-start pb-[166px]">
-      <div class="pb-[48px]">
-        <h2 class="font-mainText text-text-color text-[24px]">
-          Create Story Book
-        </h2>
-      </div>
       <div class="max-w-[550px] pb-[32px]">
         <div class="flex gap-[13px] items-center start pb-[17px]">
           <h2 class="font-textSec text-text-color text-[20px]">Choose Genre</h2>

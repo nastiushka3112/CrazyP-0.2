@@ -20,6 +20,11 @@ export default function StartCreate() {
         alt="headImage"
       />
       <div class="flex center justify-center mt-[32px] flex-col items-center pb-[166px]">
+        <div class="pb-[48px]">
+          <h2 class="font-mainText text-text-color text-[24px]">
+            Create Story Book
+          </h2>
+        </div>
         {step === 0 && <Step1 />}
         {step === 1 && <Step2 />}
       </div>
