@@ -20,12 +20,12 @@ export default function NavMain() {
           <ul class="flex items-center gap-8 ml-[80px]">
             <li class="cursor-pointer">
               <a href="/" class="font-main text-white text-lg">
-                Anime portrais
+                Storybooks
               </a>
             </li>
             <li class="cursor-pointer">
               <a href="/" class="font-main text-white text-lg">
-                Storybooks
+                Anime portrais
               </a>
             </li>
             <li class="cursor-pointer">
