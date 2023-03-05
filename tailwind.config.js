@@ -29,6 +29,7 @@ module.exports = {
       colors: {
         "main-color": "#2D061B",
         "text-color": "#433E3E",
+				"text-gray": "#C5C3C3",
         regular: "#EBB268",
         "regular-blue": "#3C6772",
         "f-white": "#FFF7E9",
