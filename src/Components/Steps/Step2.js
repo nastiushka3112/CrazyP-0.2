@@ -4,6 +4,7 @@ import { setStep } from "../../store/helpers/helpersSlice";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { STORY_BOOK_STEP2_SCHEMA } from "./Settings/Schemes";
 import QuestionIco from "../Theme/Icons/Question";
+import { addStoryInfoStep2 } from "../../store/story/storySlice";
 // import CustomSelect from "./Settings/CustomElements/CustomSelect";
 
 export default function Step2() {
@@ -25,6 +26,7 @@ export default function Step2() {
         validationSchema={STORY_BOOK_STEP2_SCHEMA}
         onSubmit={(values) => {
           console.log(values);
+          dispatch(addStoryInfoStep2(values));
         }}
       >
         {({ handleSubmit, isValid, dirty }) => (

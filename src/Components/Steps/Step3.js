@@ -4,6 +4,7 @@ import { setStep } from "../../store/helpers/helpersSlice";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { STORY_BOOK_STEP3_SCHEMA } from "./Settings/Schemes";
 import { openModal } from "../../store/helpers/helpersSlice";
+import { addStoryInfoStep3 } from "../../store/story/storySlice";
 
 export default function Step2() {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ export default function Step2() {
         validationSchema={STORY_BOOK_STEP3_SCHEMA}
         onSubmit={(values) => {
           console.log(values);
+          dispatch(addStoryInfoStep3(values));
         }}
       >
         {({ handleSubmit, isValid, dirty }) => (

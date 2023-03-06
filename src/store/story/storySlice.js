@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   storyBook: {
-    genre: null,
+    genre: [],
     theme: null,
     favoriteCharacter: null,
     timeOfSetting: null,
@@ -13,6 +13,7 @@ const initialState = {
     plot: null,
     designPrompt: null,
   },
+  toggle: 0,
 };
 
 const helpersSlice = createSlice({
@@ -20,10 +21,12 @@ const helpersSlice = createSlice({
   initialState,
   reducers: {
     addGenre(state, action) {
-      state.storyBook.genre = action.payload;
-    },
+      const data = [];
+			data.push(action.payload)
+			state.storyBook.genre = [...data]
+		},
     addThemeStory(state, action) {
-      state.storyBook.theme = action.payload;
+      state.storyBook.theme = action.payload.ThemeOfStory;
     },
     addStoryInfoStep2(state, action) {
       const data = action.payload;
@@ -39,10 +42,21 @@ const helpersSlice = createSlice({
       const data = action.payload;
       state.storyBook.designPrompt = data.CoverDesign;
     },
+		toggle(state, action) {
+      const selected = state.toggle;
+      if (selected > 1) {
+        state.toggle = 0;
+      } else {
+        state.toggle = selected + 1;
+      }
+    },
+		clearToggle(state, action) {
+			state.toggle = 2
+		},
   },
 });
 
-export const { addGenre, addThemeStory, addStoryInfoStep2, addStoryInfoStep3 } =
+export const { addGenre, addThemeStory, addStoryInfoStep2, addStoryInfoStep3, toggle, clearToggle } =
   helpersSlice.actions;
 
 export default helpersSlice.reducer;

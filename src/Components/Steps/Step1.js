@@ -1,9 +1,10 @@
-import React from "react";
+import React  from "react";
 import Variants from "./Variants";
 import { useDispatch, useSelector } from "react-redux";
 import { setStep } from "../../store/helpers/helpersSlice";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { STORY_BOOK_STEP1_SCHEMA } from "./Settings/Schemes";
+import { addThemeStory } from "../../store/story/storySlice";
 
 const data = [
   "Action-Adventure",
@@ -21,6 +22,7 @@ const data = [
 export default function Step1() {
   const dispatch = useDispatch();
   const step = useSelector((state) => state.helpers.step);
+
   return (
     <div class="items-start pb-[166px]">
       <Formik
@@ -30,6 +32,7 @@ export default function Step1() {
         validationSchema={STORY_BOOK_STEP1_SCHEMA}
         onSubmit={(values) => {
           console.log(values);
+          dispatch(addThemeStory(values));
         }}
       >
         {({ handleSubmit, isValid, dirty }) => (
