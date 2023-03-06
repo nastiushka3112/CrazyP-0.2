@@ -19,6 +19,8 @@ export default function Step2() {
           PlaceOfSettings: "",
           AmountCharacter: "",
           PointOfView: [],
+          Conflict: [],
+          AutoPlot: "",
         }}
         validationSchema={STORY_BOOK_STEP2_SCHEMA}
         onSubmit={(values) => {
@@ -131,19 +133,89 @@ export default function Step2() {
                 data-testid="PointOfView"
                 name="PointOfView"
                 label="PointOfView"
-                class="w-[100%] h-[41px] pl-[16px] border-[#C5C3C3] border-[1px] rounded-[8px]"
+                class="w-[100%] h-[41px] pl-[16px] border-[#C5C3C3] border-[1px] rounded-[8px] cursor-pointer"
               >
                 <option value="First Person">First Person</option>
                 <option value="Second Person">Second Person</option>
                 <option value="Third Person">Third Person</option>
               </Field>
-              {/* <Field
-                component={CustomSelect}
-                data-testid="PointOfView"
-                name="PointOfView"
-                label="PointOfView"
-                options={["First Person", "Second Person", "Third Person"]}
-              /> */}
+              <div class="flex flex-col gap-[8px] start pb-[6px] pt-[32px]">
+                <h2 class="font-textSec text-text-color text-[20px]">
+                  Conflict
+                </h2>
+                <p class="font-textSec text-text-color text-[12px]">
+                  The problems faced by the main character.
+                </p>
+              </div>
+              <div class="pb-[6px]">
+                <div class="flex items-center gap-[8px] pb-[12px]">
+                  <p class="font-textSec text-text-color text-[12px]">
+                    Main Character vs Self
+                  </p>
+                  <QuestionIco />
+                </div>
+                <div class="flex items-center gap-[8px] pb-[12px]">
+                  <p class="font-textSec text-text-color text-[12px]">
+                    Main Character vs Other Character
+                  </p>
+                  <QuestionIco />
+                </div>
+                <div class="flex items-center gap-[8px] pb-[12px]">
+                  <p class="font-textSec text-text-color text-[12px]">
+                    Main Character vs Society
+                  </p>
+                  <QuestionIco />
+                </div>
+                <div class="flex items-center gap-[8px] pb-[12px]">
+                  <p class="font-textSec text-text-color text-[12px]">
+                    Main Character vs Nature
+                  </p>
+                  <QuestionIco />
+                </div>
+              </div>
+              <Field
+                component="select"
+                data-testid="Conflict"
+                name="Conflict"
+                label="Conflict"
+                class="w-[100%] h-[41px] pl-[16px] border-[#C5C3C3] border-[1px] rounded-[8px] cursor-pointer"
+              >
+                <option value="Main Character vs Self">
+                  Main Character vs Self
+                </option>
+                <option value="Main Character vs Other Character">
+                  Main Character vs Other Character
+                </option>
+                <option value="Main Character vs Society">
+                  Main Character vs Society
+                </option>
+                <option value="Main Character vs Society">
+                  Main Character vs Nature
+                </option>
+              </Field>
+              <div class="flex flex-col start pb-[8px] pt-[32px]">
+                <h2 class="font-textSec text-text-color text-[20px]">Plot</h2>
+                <div class="flex gap-[6px] items-center start pb-[17px]">
+                  <p class="font-textSec text-text-color text-[12px]">
+                    Description your brief plot.
+                  </p>
+                  <div class="cursor-pointer" onClick={() => {}}>
+                    <p class="font-textSec text-regular text-[12px]">
+                      Generate Auto Plot
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <Field
+                component="textarea"
+                data-testid="AutoPlot"
+                name="AutoPlot"
+                label="AutoPlot"
+                type="text"
+                placeholder="Brief plot"
+                class="w-[100%] h-[120px] pl-[16px] border-[#C5C3C3] border-[1px] rounded-[8px]"
+              />
+              <ErrorMessage name="AutoPlot" component="div" />
             </div>
             <div class="flex justify-between">
               <button
