@@ -27,7 +27,12 @@ export default function Step1() {
             class="btn flex items-center"
             type="submit"
             onClick={() => {
-              // dispatch(openModal(true));
+							dispatch(
+                    openModal({
+                      open: true,
+                      step: 1,
+                    })
+                  );
             }}
           >
             Yes, Create

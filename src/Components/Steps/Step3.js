@@ -57,7 +57,12 @@ export default function Step2() {
                 type="submit"
                 onClick={() => {
                   handleSubmit();
-                  dispatch(openModal(true));
+                  dispatch(
+                    openModal({
+                      open: true,
+                      step: 0,
+                    })
+                  );
                 }}
               >
                 Create a Book
