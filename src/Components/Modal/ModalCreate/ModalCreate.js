@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { openModal } from "../../../store/helpers/helpersSlice";
 import Step1 from "./Steps/Step1"
 import Step2 from "./Steps/Step2"
+import Step3 from "./Steps/Step3"
 
 export default function Modal() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function Modal() {
         <div class="flex flex-col items-center justify-center">
 				{modal === 0 && <Step1 />}
 				{modal === 1 && <Step2 />}
+				{modal === 2 && <Step3 />}
 				</div>
       </div>
     </div>
