@@ -18,9 +18,9 @@ export default function Step2() {
           TimeOfSettings: "",
           PlaceOfSettings: "",
           AmountCharacter: "",
-          PointOfView: [],
-          Conflict: [],
-          AutoPlot: [],
+          PointOfView: "",
+          Conflict: "",
+          AutoPlot: "",
         }}
         validationSchema={STORY_BOOK_STEP2_SCHEMA}
         onSubmit={(values) => {
