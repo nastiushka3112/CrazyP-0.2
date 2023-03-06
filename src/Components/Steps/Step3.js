@@ -2,7 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setStep } from "../../store/helpers/helpersSlice";
 import { Field, Form, Formik, ErrorMessage } from "formik";
-import { STORY_BOOK_STEP2_SCHEMA } from "./Settings/Schemes";
+import { STORY_BOOK_STEP3_SCHEMA } from "./Settings/Schemes";
+import { openModal } from "../../store/helpers/helpersSlice";
 
 export default function Step2() {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ export default function Step2() {
         initialValues={{
           CoverDesign: [],
         }}
-        validationSchema={STORY_BOOK_STEP2_SCHEMA}
+        validationSchema={STORY_BOOK_STEP3_SCHEMA}
         onSubmit={(values) => {
           console.log(values);
         }}
@@ -56,7 +57,7 @@ export default function Step2() {
                 type="submit"
                 onClick={() => {
                   handleSubmit();
-                  // dispatch(setStep(step + 1));
+                  dispatch(openModal(true));
                 }}
               >
                 Create a Book

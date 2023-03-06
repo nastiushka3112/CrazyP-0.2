@@ -22,7 +22,7 @@ export default function HeaderRescription() {
         <button
           class="btn-second flex items-center justify-center"
           onClick={() => {
-            dispatch(openModal(true));
+            // dispatch(openModal(true));
           }}
         >
           Learn More

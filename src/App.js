@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "../src/Components/Modal/Modal";
+import ModalCreate from "./Components/Modal/ModalCreate/ModalCreate";
 import { useSelector } from "react-redux";
 import Footer from "./Components/Footer/Footer";
 import AppRoutes from "./routes/AppRouters";
@@ -15,7 +15,7 @@ function App() {
       <Header />
       {burger && <BurgerModal />}
       <AppRoutes />
-      {modal && <Modal Name={"Name"} Brif={"Brif"} Ganre={"Ganre"} />}
+      {modal && <ModalCreate />}
       <Footer />
     </div>
   );
