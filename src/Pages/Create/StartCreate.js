@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../store/helpers/helpersSlice";
 import Step1 from "../../Components/Steps/Step1";
 import Step2 from "../../Components/Steps/Step2";
+import Step3 from "../../Components/Steps/Step3";
 
 export default function StartCreate() {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ export default function StartCreate() {
         </div>
         {step === 0 && <Step1 />}
         {step === 1 && <Step2 />}
+        {step === 2 && <Step3 />}
       </div>
     </div>
   );
