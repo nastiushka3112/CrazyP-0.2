@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   storyBook: {
-    genre: [],
+    genre: {},
     theme: null,
     favoriteCharacter: null,
     timeOfSetting: null,
@@ -13,7 +13,7 @@ const initialState = {
     plot: null,
     designPrompt: null,
   },
-  toggle: 0,
+  toggle: 2,
 };
 
 const helpersSlice = createSlice({
@@ -21,9 +21,13 @@ const helpersSlice = createSlice({
   initialState,
   reducers: {
     addGenre(state, action) {
-      const data = [];
-			data.push(action.payload)
-			state.storyBook.genre = [...data]
+			state.storyBook.genre = {
+				...state.storyBook.genre,
+				[state.toggle]: action.payload
+			};
+			if(state.toggle === 1 ){
+				state.storyBook.genre = {}
+			}
 		},
     addThemeStory(state, action) {
       state.storyBook.theme = action.payload.ThemeOfStory;
