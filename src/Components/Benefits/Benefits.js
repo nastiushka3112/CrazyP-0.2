@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Benefits() {
   return (
-    <div class="pt-[100px] flex flex-col justify-center items-center w-[95%]">
+    <div class="pt-[100px] flex flex-col justify-center items-center w-[95%] max-[420px]:px-[5%]">
       <div class="flex flex-col justify-center items-center  max-w-[883px]">
         <h2 class="font-mainText text-regular text-[48px] leading-[77px] mb-[24px] ">
           Benefits
@@ -15,7 +15,7 @@ export default function Benefits() {
       </div>
       <div class="flex m-[64px] xl:flex-row flex-col items-center">
         <div class="flex items-center flex-col">
-          <div class="flex flex-col items-start mb-[40px] w-[425px] py-[44px] px-[32px] gap-[16px] h-[236px] rounded-[30px] border-regular border-[3px]">
+          <div class="flex flex-col items-start mb-[40px] w-[425px] max-[420px]:max-w-[400px] max-[420px]:ml-[5%] py-[44px] px-[32px] gap-[16px] h-[236px] rounded-[30px] border-regular border-[3px]">
             <h2 class="font-mainText text-regular text-[32px]">
               Personalization:
             </h2>
@@ -25,7 +25,7 @@ export default function Benefits() {
               book is one-of-a-kind and truly special.
             </p>
           </div>
-          <div class="flex flex-col items-start mb-[40px] w-[425px] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
+          <div class="flex flex-col items-start mb-[40px] w-[425px] max-[420px]:max-w-[400px] max-[420px]:ml-[5%] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
             <h2 class="font-mainText text-regular text-[32px]">
               High-Quality Printing:
             </h2>
@@ -35,7 +35,7 @@ export default function Benefits() {
               for years to come.
             </p>
           </div>
-          <div class="flex flex-col items-start mb-[40px] w-[425px] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
+          <div class="flex flex-col items-start mb-[40px] w-[425px] max-[420px]:max-w-[400px] max-[420px]:ml-[5%] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
             <h2 class="font-mainText text-regular text-[32px]">
               Customer Service:
             </h2>
@@ -59,7 +59,7 @@ export default function Benefits() {
           />
         </div>
         <div class="flex items-center flex-col">
-          <div class="flex flex-col items-start mb-[40px] w-[425px] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
+          <div class="flex flex-col items-start mb-[40px] w-[425px] max-[420px]:max-w-[400px] max-[420px]:ml-[5%] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
             <h2 class="font-mainText text-regular text-[32px]"> Variety: </h2>
             <p class="font-textSec text-white text-[16px]">
               With CrazyPrints, you can choose from a wide variety of genres and
@@ -67,7 +67,7 @@ export default function Benefits() {
               create.
             </p>
           </div>
-          <div class="flex flex-col items-start mb-[40px] w-[425px] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
+          <div class="flex flex-col items-start mb-[40px] w-[425px] max-[420px]:max-w-[400px] max-[420px]:ml-[5%] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
             <h2 class="font-mainText text-regular text-[32px]">Convenience:</h2>
             <p class="font-textSec text-white text-[16px]">
               Creating your own personalized storybook with CrazyPrints is easy
@@ -75,7 +75,7 @@ export default function Benefits() {
               your doorstep.
             </p>
           </div>
-          <div class="flex flex-col items-start mb-[40px] w-[425px] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
+          <div class="flex flex-col items-start mb-[40px] w-[425px] max-[420px]:max-w-[400px] max-[420px]:ml-[5%] h-[236px] py-[44px] px-[32px] gap-[16px] rounded-[30px] border-regular border-[3px]">
             <h2 class="font-mainText text-regular text-[32px]">Affordable: </h2>
             <p class="font-textSec text-white text-[16px]">
               We strive to make our service affordable for everyone, so you can

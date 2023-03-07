@@ -25,6 +25,8 @@ module.exports = {
         questionImage: "url('/src/Components/Theme/Img/question.png')",
         showcase: "url('/src/Components/Theme/Img/ShowCase.png')",
         testimonials: "url('/src/Components/Theme/Img/Testimonials.png')",
+        bgParallax: "url('/src/Components/Theme/Img/Parallax/bg.png')",
+				treesParallax: "url('/src/Components/Theme/Img/Parallax/trees.png')"
       },
       colors: {
         "main-color": "#2D061B",
@@ -116,7 +118,7 @@ module.exports = {
         },
         ".btn-modal-send": {
           display: "flex",
-					justifyContent: "center",
+          justifyContent: "center",
           flexDirection: "row",
           alignItems: "flex-start",
           padding: "12px 16px",

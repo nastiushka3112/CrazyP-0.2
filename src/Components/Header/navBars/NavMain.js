@@ -9,7 +9,7 @@ export default function NavMain() {
   const burger = useSelector((state) => state.helpers.burger);
 
   return (
-    <div class="flex items-center justify-between px-[64px] pt-[20px] w-[100%] absolute h-[81px]">
+    <div class="flex items-center justify-between px-[64px] max-[420px]:px-[5%] pt-[20px] w-[100%] absolute h-[81px]">
       <div class="items-center flex">
         <div class="cursor-pointer">
           <a href="/">

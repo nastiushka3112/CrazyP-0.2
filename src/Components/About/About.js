@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <div class="flex justify-between  pr-[67px] mt-[104px] mb-[64px]">
-      <div class="ml-[10%]">
+    <div class="flex justify-between  pr-[67px] mt-[104px] mb-[64px] max-[420px]:px-[5%]">
+      <div class="ml-[10%] max-[420px]:ml-[0%]">
         <img src={require("../Theme/Img/Samurai1.png")} alt="samurai" />
       </div>
       <div class="max-w-[720px]">

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 export default function HeaderRescription() {
   const dispatch = useDispatch();
   return (
-    <div class="flex items-center flex-col  justify-center mx-[20%] pt-[200px] pb-[212px] ">
+    <div class="flex items-center flex-col  justify-center mx-[20%] max-[420px]:mx-[5%] pt-[200px] pb-[212px] ">
       <h1 class="mb-[24px] font-mainText text-text-color text-[48px] leading-[53px] text-center">
         Become The Hero Of Your Own Story \n with our AI-powered storybook
         creator
@@ -29,7 +29,7 @@ export default function HeaderRescription() {
         </button>
         <NavLink to={"/create"}>
           <button
-            class="btn flex items-center justify-center"
+            class="btn flex items-center justify-center "
             // onClick={() => {
             //   dispatch(openModal(true));
             // }}

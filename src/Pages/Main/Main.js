@@ -22,6 +22,25 @@ export default function Main() {
   return (
     <div>
       <div class="bg-headImage bg-co bg-cover bg-center">
+        {/* <div class="min-h-[100%]">
+        <section class="">
+          <div class="min-h-[1101.45px]">
+            <div class=" w-[100%] h-[100%] top-0 left-0 fixed">
+              <HeaderRescription />
+            </div>
+            <div class="relative z-[2]">
+              <div class="absolute w-[100%] h-[100%] left-0">
+                <div class="bg-bgParallax bg-cover w-[1653px] h-[1101px] bg-top"></div>
+              </div>
+              <div class="absolute w-[100%] h-[100%] left-0">
+                <div class="bg-treesParallax bg-cover w-[1653px] h-[1101px] top-[15%] bg-top"></div>
+              </div>
+              <div class="absolute w-[100%] h-[100%] left-0">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </section> */}
         {/* <Header />
         {burger && <BurgerModal />} */}
         <HeaderRescription />

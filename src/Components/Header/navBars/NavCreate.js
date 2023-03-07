@@ -8,7 +8,7 @@ export default function NavCreate() {
   const burger = useSelector((state) => state.helpers.burger);
 
   return (
-    <div class="flex items-center justify-between px-[64px] pb-[33px] pt-[27px] w-[100%] bg-main-color">
+    <div class="flex items-center justify-between px-[64px] max-[420px]:px-[5%] pb-[33px] pt-[27px] w-[100%] bg-main-color">
       <div class="items-center flex">
         <div class="cursor-pointer">
           <a href="/">
