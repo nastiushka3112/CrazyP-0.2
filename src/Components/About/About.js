@@ -3,10 +3,10 @@ import React from "react";
 export default function About() {
   return (
     <div class="flex justify-between  pr-[67px] mt-[104px] mb-[64px] max-[420px]:px-[5%]">
-      <div class="ml-[10%] max-[420px]:ml-[0%]">
+      <div class="ml-[10%] max-[420px]:ml-[0%]  max-[420px]:absolute  max-[420px]:z-0  max-[420px]:left-[100px]">
         <img src={require("../Theme/Img/Samurai1.png")} alt="samurai" />
       </div>
-      <div class="max-w-[720px]">
+      <div class="max-w-[720px] max-[420px]:z-[2]">
         <h2 class="font-mainText text-regular text-[64px] leading-[77px] mb-[24px]">
           About
         </h2>

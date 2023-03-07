@@ -48,7 +48,7 @@ export default function Question() {
   return (
     <div class="pt-[145px] pb-[178px] flex flex-col justify-center items-center">
       <div>
-        <h2 class="text-regular text-[48px] font-mainText">
+        <h2 class="text-regular text-[48px] font-mainText max-[420px]:px-[5%]">
           Frequently asked questions
         </h2>
       </div>

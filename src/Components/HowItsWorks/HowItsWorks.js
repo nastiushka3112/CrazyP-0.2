@@ -43,7 +43,7 @@ export default function HowItsWorks() {
   return (
     <div class="flex flex-col justify-center items-center mt-[200px] mb-[233px] relative">
       <div class="flex flex-col justify-start items-center  bg-[#F9E2BB] pt-[34px] md:pl-[129px] max-w-[1020px] h-[1260px]">
-        <div class="flex flex-col justify-start items-start">
+        <div class="flex flex-col justify-start items-start max-[420px]:mx-[5%]">
           <h2 class="text-[#433E3E] text-[48px] font-mainText float-right">
             How it works?
           </h2>
