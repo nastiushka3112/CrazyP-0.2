@@ -36,6 +36,7 @@ export default function Testimonials() {
         slidesPerView={1}
         className="mySwiper"
         breakpoints={{
+          100: { slidesPerView: 1, spaceBetween: 5 },
           1400: { slidesPerView: 2, spaceBetween: 20 },
           1900: { slidesPerView: 3, spaceBetween: 20 },
         }}

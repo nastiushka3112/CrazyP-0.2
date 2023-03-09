@@ -69,7 +69,7 @@ module.exports = {
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
-          padding: "20px 32px",
+          padding: "18px 30px",
           gap: "10px",
           left: "1203px",
           top: "20px",
