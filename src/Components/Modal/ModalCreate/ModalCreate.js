@@ -16,7 +16,7 @@ export default function Modal() {
       }}
     >
       <div
-        class="bg-[#FFFFFF] rounded-[8px] w-[440px] fixed top-[40%] left-[35%]"
+        class="bg-[#FFFFFF] rounded-[8px] w-[440px] fixed top-[40%] left-[35%] max-[420px]:w-[90%] max-[420px]:left-[5%] max-[420px]:top-[25%]"
         onClick={(e) => e.stopPropagation()}
       >
         <div class="flex flex-col items-center justify-center">

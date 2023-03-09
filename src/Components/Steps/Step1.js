@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import Variants from "./Variants";
 import { useDispatch, useSelector } from "react-redux";
 import { setStep } from "../../store/helpers/helpersSlice";
@@ -24,7 +24,7 @@ export default function Step1() {
   const step = useSelector((state) => state.helpers.step);
 
   return (
-    <div class="items-start pb-[166px]">
+    <div class="items-start pb-[166px] max-[420px]:w-[90%]">
       <Formik
         initialValues={{
           ThemeOfStory: "",
@@ -73,7 +73,7 @@ export default function Step1() {
               />
               <ErrorMessage name="ThemeOfStory" component="div" />
             </div>
-            <div class="ml-[80%]">
+            <div class="ml-[80%] max-[420px]:ml-[70%]">
               <button
                 class="btn flex items-center"
                 disabled={!isValid && !dirty}

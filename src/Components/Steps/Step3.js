@@ -14,7 +14,7 @@ export default function Step2() {
     <div class="items-start pb-[166px]">
       <Formik
         initialValues={{
-          CoverDesign: [],
+          CoverDesign: "",
         }}
         validationSchema={STORY_BOOK_STEP3_SCHEMA}
         onSubmit={(values) => {
@@ -24,7 +24,7 @@ export default function Step2() {
       >
         {({ handleSubmit, isValid, dirty }) => (
           <Form>
-            <div class="w-[550px] pb-[32px] left-0">
+            <div class="w-[550px] max-[420px]:w-[90%] pb-[32px] left-0 ">
               <div class="flex flex-col start pb-[8px] pt-[32px]">
                 <h2 class="font-textSec text-text-color text-[20px] pb-[8px]">
                   Book Cover Design Prompt

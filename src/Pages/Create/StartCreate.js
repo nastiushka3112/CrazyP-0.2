@@ -16,7 +16,7 @@ export default function StartCreate() {
   return (
     <div style={{ minHeight: "calc(100vh - 89px)" }}>
       <img
-        class="w-[100%]"
+        class="w-[100%] max-[420px]:h-[100px]"
         src={require("../../Components/Theme/Img/createP.png")}
         alt="headImage"
       />

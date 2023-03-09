@@ -12,7 +12,7 @@ export default function Step2() {
   const step = useSelector((state) => state.helpers.step);
 
   return (
-    <div class="items-start pb-[166px]">
+    <div class="items-start pb-[166px] max-[420px]:w-[90%]">
       <Formik
         initialValues={{
           FavoriteCharter: "",
@@ -31,7 +31,7 @@ export default function Step2() {
       >
         {({ handleSubmit, isValid, dirty }) => (
           <Form>
-            <div class="w-[550px] pb-[32px] left-0">
+            <div class="w-[550px] max-[420px]:w-[90%] pb-[32px] left-0">
               <div class="flex flex-col gap-[10px] start pb-[17px]">
                 <h2 class="font-textSec text-text-color text-[20px]">
                   Your Favorite Character
