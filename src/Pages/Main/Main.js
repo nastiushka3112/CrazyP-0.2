@@ -10,6 +10,10 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 // import BurgerModal from "../../Components/Modal/BurgerModal";
 import Benefits from "../../Components/Benefits/Benefits";
 import { setPage } from "../../store/helpers/helpersSlice";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Samurai from "../../Components/Theme/Parallax/samurai";
+import Trees from "../../Components/Theme/Parallax/trees";
+import Bg from "../../Components/Theme/Parallax/bg";
 
 export default function Main() {
   // const burger = useSelector((state) => state.helpers.burger);
@@ -18,31 +22,38 @@ export default function Main() {
   useEffect(() => {
     dispatch(setPage("main"));
   }, []);
-
+  // class="bg-headImage bg-co bg-cover bg-center"
   return (
     <div>
+      <Parallax
+        pages={2}
+        style={{
+          top: "0",
+          left: "0",
+          height: "800.45px",
+        }}
+      >
+        <ParallaxLayer offset={0} speed={0.25}>
+          <Bg />
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.5}>
+          <Trees />
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.75}>
+          <Samurai />
+          <h1>TETETETETETETET</h1>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.25}>
+          <Bg />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.5}>
+          <Trees />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.75}>
+          <Samurai />
+        </ParallaxLayer>
+      </Parallax>
       <div class="bg-headImage bg-co bg-cover bg-center">
-        {/* <div class="min-h-[100%]">
-        <section class="">
-          <div class="min-h-[1101.45px]">
-            <div class=" w-[100%] h-[100%] top-0 left-0 fixed">
-              <HeaderRescription />
-            </div>
-            <div class="relative z-[2]">
-              <div class="absolute w-[100%] h-[100%] left-0">
-                <div class="bg-bgParallax bg-cover w-[1653px] h-[1101px] bg-top"></div>
-              </div>
-              <div class="absolute w-[100%] h-[100%] left-0">
-                <div class="bg-treesParallax bg-cover w-[1653px] h-[1101px] top-[15%] bg-top"></div>
-              </div>
-              <div class="absolute w-[100%] h-[100%] left-0">
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        {/* <Header />
-        {burger && <BurgerModal />} */}
         <HeaderRescription />
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
