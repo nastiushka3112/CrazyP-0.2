@@ -7,9 +7,9 @@ import { Pagination } from "swiper";
 
 export default function ShowCase() {
   return (
-    <div class="flex justify-center items-center mt-[200px]">
-      <div class="bg-showcase bg-cover w-[100%] h-[565px] flex justify-between rounded-[24px] items-center sm:pl-[64px] pr-[32px] pt-[91px]">
-        <div class="max-w-[582px]">
+    <div class="flex justify-center items-center mt-[200px] max-[420px]:mb-[400px]">
+      <div class="bg-showcase bg-cover w-[100%] h-[565px] flex justify-between max-[420px]:flex-col max-[420px]:px-[5%] rounded-[24px] items-center sm:pl-[64px] pr-[32px] pt-[91px]">
+        <div class="max-w-[582px] max-[420px]:mt-[100px]">
           <h2 class="text-main-color text-[48px] font-mainText">Showcase</h2>
           <p class="text-[#FFFFFF] text-[20px] font-textSec">
             Here, you can see examples of the personalized storybooks that we
@@ -18,7 +18,7 @@ export default function ShowCase() {
             the personalized storybook of your own.
           </p>
         </div>
-        <div class="w-[338px] h-[90%]">
+        <div class="w-[338px] h-[90%]  max-[420px]:mt-[200px]  max-[420px]:ml-[20%]">
           <Swiper
             pagination={{
               el: ".pagination",
