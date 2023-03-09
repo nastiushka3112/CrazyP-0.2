@@ -22,10 +22,11 @@ export default function Main() {
   useEffect(() => {
     dispatch(setPage("main"));
   }, []);
-  // class="bg-headImage bg-co bg-cover bg-center"
+
   return (
     <div>
-      <Parallax
+      <div class="bg-headImage bg-co bg-cover bg-center">
+        {/* <Parallax
         pages={2}
         style={{
           top: "0",
@@ -34,6 +35,7 @@ export default function Main() {
         }}
       >
         <ParallaxLayer offset={0} speed={0.25}>
+          <h1 class="text-[red]">TETETETETETETET</h1>
           <Bg />
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.5}>
@@ -41,7 +43,6 @@ export default function Main() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.75}>
           <Samurai />
-          <h1>TETETETETETETET</h1>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.25}>
           <Bg />
@@ -52,8 +53,7 @@ export default function Main() {
         <ParallaxLayer offset={1} speed={0.75}>
           <Samurai />
         </ParallaxLayer>
-      </Parallax>
-      <div class="bg-headImage bg-co bg-cover bg-center">
+      </Parallax> */}
         <HeaderRescription />
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
