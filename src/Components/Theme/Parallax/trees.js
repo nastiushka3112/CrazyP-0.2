@@ -8,8 +8,9 @@ const Trees = () => {
       fill="none"
       style={{
         width: "100%",
-        // height: "1101.45px",
+        height: "1101.45px",
         zIndex: "0",
+        // paddingBottom: "500px",
       }}
     >
       <mask

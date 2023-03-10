@@ -8,8 +8,8 @@ const Samurai = () => {
       fill="none"
       style={{
         width: "100%",
-        // height: "1101.45px",
-				zIndex: "0",
+        height: "1101.45px",
+        zIndex: "0",
       }}
     >
       <mask
