@@ -11,6 +11,7 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 import Benefits from "../../Components/Benefits/Benefits";
 import { setPage } from "../../store/helpers/helpersSlice";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Spring, animated } from "@react-spring/web";
 import Samurai from "../../Components/Theme/Parallax/samurai";
 import Trees from "../../Components/Theme/Parallax/trees";
 import Bg from "../../Components/Theme/Parallax/bg";
@@ -25,7 +26,7 @@ export default function Main() {
 
   return (
     <div>
-      <div class="bg-headImage bg-co bg-cover bg-center">
+      <div class="bg-headImage bg-co bg-cover bg-center h-[1101.45px]">
         {/* <Parallax
         pages={2}
         style={{
@@ -54,7 +55,31 @@ export default function Main() {
           <Samurai />
         </ParallaxLayer>
       </Parallax> */}
-        <HeaderRescription />
+        <Spring
+          delay={500}
+          config={{ duration: 1000 }}
+          from={{
+            top: "33%",
+            width: "100%",
+            position: "absolute",
+            zIndex: 2,
+            opacity: 0,
+          }}
+          to={{
+            top: "13%",
+            width: "100%",
+            position: "relative",
+            zIndex: 2,
+            opacity: 1,
+          }}
+        >
+          {(style) => (
+            <animated.div style={style}>
+              <HeaderRescription />
+            </animated.div>
+          )}
+        </Spring>
+        {/* <HeaderRescription /> */}
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
         <div class="w-[100%] h-[1px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />

@@ -10,7 +10,7 @@ const Bg = () => {
         width: "100%",
         height: "1101.45px",
         zIndex: "0",
-        paddingBottom: "200px",
+        // paddingBottom: "200px",
       }}
     >
       <path

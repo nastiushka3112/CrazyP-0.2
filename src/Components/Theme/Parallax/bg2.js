@@ -2,10 +2,11 @@ const Bg2 = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1472"
+      width="100%"
       height="951"
       viewBox="0 0 1472 951"
       fill="none"
+			objectFit="cover"
     >
       <g clip-path="url(#clip0_720_593)">
         <mask
@@ -13,7 +14,7 @@ const Bg2 = () => {
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"
-          width="1472"
+          width="100%"
           height="951"
         >
           <path
@@ -38,7 +39,7 @@ const Bg2 = () => {
       </g>
       <defs>
         <clipPath id="clip0_720_593">
-          <rect width="1472" height="951" fill="white" />
+          <rect width="100%" height="951" fill="white" />
         </clipPath>
       </defs>
     </svg>
