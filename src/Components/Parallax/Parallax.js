@@ -69,16 +69,16 @@ export default function ParallaxSection() {
           </Spring>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.75} factor={1.5}>
-          <div class="bg-bgParallax flex justify-center pb-[80px] bg-cover h-[1000px] w-[100%]  absolute   overflow-hidden" />
-          {/* <Bg2 /> */}
+          {/* <div class="bg-bgParallax flex justify-center pb-[80px] bg-cover h-[1000px] w-[100%]  absolute   overflow-hidden" /> */}
+          <Bg2 />
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.25} factor={2}>
-          <div class="bg-treesParallax flex justify-center pb-[80px] bg-cover h-[1000px] w-[100%]  absolute   overflow-hidden" />
-          {/* <Trees2 /> */}
+          {/* <div class="bg-treesParallax flex justify-center pb-[80px] bg-cover h-[1000px] w-[100%]  absolute   overflow-hidden" /> */}
+          <Trees2 />
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.5} factor={1}>
-          <div class="bg-samuraiParallax flex justify-center pb-[80px] bg-cover h-[1000px] w-[100%]  absolute   overflow-hidden" />
-          {/* <Samurai2 /> */}
+          {/* <div class="bg-samuraiParallax flex justify-center pb-[80px] bg-cover h-[1000px] w-[100%]  absolute   overflow-hidden" /> */}
+          <Samurai2 />
         </ParallaxLayer>
       </Parallax>
     </div>

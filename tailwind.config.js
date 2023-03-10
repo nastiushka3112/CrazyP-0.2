@@ -26,9 +26,11 @@ module.exports = {
         showcase: "url('/src/Components/Theme/Img/ShowCase.png')",
         testimonials: "url('/src/Components/Theme/Img/Testimonials.png')",
         bgParallax: "url('/src/Components/Theme/Img/Parallax/bg.png')",
-				bg2Parallax: "url('/src/Components/Theme/Img/Parallax/bg1.png')",
+        bg2Parallax: "url('/src/Components/Theme/Img/Parallax/bg1.png')",
         treesParallax: "url('/src/Components/Theme/Img/Parallax/trees.png')",
-        samuraiParallax:"url('/src/Components/Theme/Img/Parallax/samurai.png')",
+        samuraiParallax:
+          "url('/src/Components/Theme/Img/Parallax/samurai.png')",
+        mobileBg: "url('/src/Components/Theme/Img/MobileBg.png')",
       },
       colors: {
         "main-color": "#2D061B",

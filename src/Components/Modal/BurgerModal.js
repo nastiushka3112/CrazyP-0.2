@@ -7,11 +7,11 @@ export default function BurgerModal() {
   return (
     <>
       {page == "create" ? (
-        <div class="w-[100%] h-[500px] absolute bg-main-color flex justify-center flex-col">
+        <div class="w-[100%] h-[500px] absolute bg-main-color flex justify-center flex-col z-20">
           <Menu />
         </div>
       ) : (
-        <div class="w-[100%] h-[500px] absolute bg-main-color mt-[85px] flex justify-center flex-col">
+        <div class="w-[100%] h-[500px] absolute bg-main-color mt-[85px] flex justify-center flex-col z-20">
           <Menu />
         </div>
       )}
