@@ -11,7 +11,7 @@ export default function HeaderRescription() {
         Become The Hero Of Your Own Story \n with our AI-powered storybook
         creator
       </h1>
-      <p class="mb-[24px] font-main text-text-color text-[24px] mx-[5%] leading-[29px] text-center max-[420px]:text-[14px] max-[420px]:leading-[20px]">
+      <p class="mb-[24px] max-[420px]:mb-[34px] font-main text-text-color text-[24px] mx-[5%] leading-[29px] text-center max-[420px]:text-[14px] max-[420px]:leading-[20px]">
         With CrazyPrints, you can create custom stories that are tailored to
         your interests and preferences. Our AI algorithms generate unique
         stories and illustrations that are personalised to you, ensuring that no
