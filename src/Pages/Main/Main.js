@@ -55,7 +55,7 @@ export default function Main() {
         <div class="w-[100%] h-[0px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />
         <Benefits />
       </div>
-      <div class="bg-Frame6 flex  bg-cover xl:h-[1700px]">
+      <div class="bg-Frame6 flex  bg-cover xl:h-[1700px] ">
         <HowItsWorks />
       </div>
       <div class="bg-bg-main relative  overflow-hidden">
