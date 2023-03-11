@@ -44,13 +44,14 @@ export default function Main() {
             </animated.div>
           )}
         </Spring>
-        {/* <HeaderRescription /> */}
+        {/* <HeaderRescription />  */}
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
         <div class="w-[100%] h-[1px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />
         <About />
       </div>
       <div class="bg-main-color">
+        <div class="w-[43%] ml-[30%] h-[1px] border-[1px] origin-top-left rotate-[-45deg]  border-regular top-0 z-0 opacity-[0.4] invisible  max-[420px]:visible " />
         <div class="w-[100%] h-[0px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />
         <Benefits />
       </div>
