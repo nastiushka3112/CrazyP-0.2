@@ -6,7 +6,7 @@ const Bg2 = () => {
       height="951"
       viewBox="0 0 1472 951"
       fill="none"
-			objectFit="cover"
+      objectFit="cover"
     >
       <g clip-path="url(#clip0_720_593)">
         <mask

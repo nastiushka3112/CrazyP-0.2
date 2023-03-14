@@ -9,6 +9,7 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 import Benefits from "../../Components/Benefits/Benefits";
 import { setPage } from "../../store/helpers/helpersSlice";
 import { Spring, animated } from "@react-spring/web";
+import Parallax from "../../Components/Parallax/Parallax";
 
 export default function Main() {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ export default function Main() {
   return (
     <div>
       <div class="bg-headImage bg-co bg-cover bg-center h-[1101.45px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px]">
+			{/* <div class="h-[1101.45px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px]"> */}
         <Spring
           delay={500}
           config={{ duration: 1000 }}
@@ -44,6 +46,7 @@ export default function Main() {
             </animated.div>
           )}
         </Spring>
+        {/* <Parallax /> */}
         {/* <HeaderRescription />  */}
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
