@@ -20,7 +20,7 @@ export default function ShowCase() {
             the personalized storybook of your own.
           </p>
         </div>
-        <div class="w-[338px] h-[90%]  max-[420px]:mt-[32px]  max-[420px]:ml-[2%]">
+        <div class="w-[338px] h-[90%]  max-[420px]:mt-[32px]  max-[420px]:ml-[5%]">
           <Swiper
             pagination={{
               el: ".pagination",
