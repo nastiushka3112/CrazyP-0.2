@@ -42,23 +42,23 @@ const data = [
 export default function HowItsWorks() {
   return (
     <div class="flex flex-col justify-center items-center mt-[200px] mb-[233px]  max-[420px]:mb-[0px]  max-[420px]:mt-[0px] relative  max-[420px]:bg-[#F9E2BB]">
-      <div class="flex flex-col justify-start items-center  bg-[#F9E2BB] pt-[34px] md:pl-[129px] max-w-[1020px] h-[1260px] max-[420px]:h-[860px]">
-        <div class="flex flex-col justify-start items-start max-[420px]:mx-[5%]">
-          <h2 class="text-[#433E3E] text-[48px] font-mainText float-right">
+      <div class="flex flex-col justify-start items-center  bg-[#F9E2BB] pt-[34px] md:pl-[129px] max-w-[1020px] h-[1260px] max-[420px]:h-[600px]">
+        <div class="flex flex-col justify-start items-start max-[420px]:mx-[10%]">
+          <h2 class="text-[#433E3E] text-[48px] max-[420px]:text-[24px] font-mainText float-right max-[420px]:mb-[16px]">
             How it works?
           </h2>
-          <p class="font-textSec text-[20px] text-[#433E3E] max-w-[731px] pr-[20%]">
+          <p class="font-textSec  text-[20px] max-[420px]:text-[12px] text-[#433E3E] max-w-[731px] pr-[20%]">
             At CrazyPrints, creating your own personalized storybook is easy and
             fun. Here's how it works:
           </p>
           <img
             src={require("../Theme/Img/5021.png")}
             alt="HowItWorks"
-            class="max-w-[400px] sm:max-w-[600px] max-h-[840] mt-[72px]"
+            class="max-w-[400px] sm:max-w-[600px] max-h-[840] max-[420px]:h-[456px] mt-[72px] max-[420px]:mt-[32px]"
           />
         </div>
       </div>
-      <div class="xl:absolute xl:top-[20%] 2xl:left-[55em] 2xl:top-[20%] xl:left-[49em] relative">
+      <div class="xl:absolute xl:top-[20%] 2xl:left-[55em] 2xl:top-[20%] xl:left-[49em] max-[420px]:top-[32px] relative max-[420px]:mb-[32px]">
         {data.map((el) => (
           <Card name={el.name} text={el.text} key={Math.random()} />
         ))}
