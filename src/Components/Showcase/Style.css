@@ -28,7 +28,7 @@
     cursor: pointer;
     display: flex;
     gap: 6px;
-    margin-left: 28%;
-    margin-top: 10px;
+    /* margin-left: 28%; */
+    margin-top: 16px;
   }
 }

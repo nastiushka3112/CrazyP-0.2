@@ -24,6 +24,7 @@ module.exports = {
         variant2img: "url('/src/Components/Theme/Img/variant2img.png')",
         questionImage: "url('/src/Components/Theme/Img/question.png')",
         showcase: "url('/src/Components/Theme/Img/ShowCase.png')",
+				showcasemb: "url('/src/Components/Theme/Img/ShowCaseMb.png')",
         testimonials: "url('/src/Components/Theme/Img/Testimonials.png')",
         bgParallax: "url('/src/Components/Theme/Img/Parallax/bg.png')",
         bg2Parallax: "url('/src/Components/Theme/Img/Parallax/bg1.png')",
