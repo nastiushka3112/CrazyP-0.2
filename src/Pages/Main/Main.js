@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import HeaderRescription from "../../Components/Header/HeaderRescription";
 import About from "../../Components/About/About";
 import HowItsWorks from "../../Components/HowItsWorks/HowItsWorks";
 import Question from "../../Components/Question/Question";
@@ -8,7 +7,6 @@ import ShowCase from "../../Components/Showcase/ShowCase";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Benefits from "../../Components/Benefits/Benefits";
 import { setPage } from "../../store/helpers/helpersSlice";
-import { Spring, animated } from "@react-spring/web";
 import Parallax from "../../Components/Parallax/Parallax";
 
 export default function Main() {
@@ -20,34 +18,8 @@ export default function Main() {
 
   return (
     <div>
-      {/* <div class="bg-headImage bg-co bg-cover bg-center h-[1101.45px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px]"> */}
       <div class="h-[900px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px] relative bg-[#2D061B]">
-        {/* <Spring
-          delay={500}
-          config={{ duration: 1000 }}
-          from={{
-            top: "33%",
-            width: "100%",
-            position: "absolute",
-            zIndex: 2,
-            opacity: 0,
-          }}
-          to={{
-            top: "13%",
-            width: "100%",
-            position: "relative",
-            zIndex: 2,
-            opacity: 1,
-          }}
-        >
-          {(style) => (
-            <animated.div style={style}>
-              <HeaderRescription />
-            </animated.div>
-          )}
-        </Spring> */}
-          <Parallax />
-        {/* <HeaderRescription />  */}
+        <Parallax />
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
         <div class="w-[100%] h-[1px] border-[1px]  border-regular top-0 z-0 opacity-[0.4]" />
