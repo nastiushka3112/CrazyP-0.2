@@ -236,7 +236,7 @@ export default function ParallaxSection() {
                 opacity: 0,
               }}
               to={{
-                top: "13%",
+                top: "2%",
                 width: "100%",
                 position: "relative",
                 zIndex: 2,
