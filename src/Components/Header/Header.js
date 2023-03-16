@@ -11,7 +11,7 @@ export default function Header() {
     return (
       <Spring
         config={{ duration: 1000 }}
-        delay={500}
+        delay={2000}
         from={{ top: -100, position: "absolute", width: "100%", zIndex: 2 }}
         to={{ top: 0, position: "absolute", width: "100%", zIndex: 2 }}
       >

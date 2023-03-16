@@ -18,9 +18,9 @@ export default function ParallaxSection() {
         <Parallax
           pages={1.1}
           style={{
-            top: "0",
+            top: "-10",
             left: "0",
-            height: "1101.45px",
+            height: "900px",
           }}
         >
           <ParallaxLayer offset={0} speed={0.75}>
@@ -40,11 +40,16 @@ export default function ParallaxSection() {
             >
               {(style) => (
                 <animated.div style={style}>
-                  <div class="w-[100%]">
+                  <div class="w-[100%] relative">
                     <img
                       src={require("../Theme/Img/Parallax/bg1.png")}
                       alt="trees1"
-                      style={{ width: "100%", backgroundSize: "cover" }}
+                      style={{
+                        width: "100%",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        height: "900px",
+                      }}
                     />
                   </div>
                 </animated.div>
@@ -68,11 +73,16 @@ export default function ParallaxSection() {
             >
               {(style) => (
                 <animated.div style={style}>
-                  <div class="w-[100%]">
+                  <div class="w-[100%] relative">
                     <img
                       src={require("../Theme/Img/Parallax/bg.png")}
                       alt="samurai"
-                      style={{ width: "100%", backgroundSize: "cover" }}
+                      style={{
+                        width: "100%",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        height: "900px",
+                      }}
                     />
                   </div>
                 </animated.div>
@@ -97,11 +107,17 @@ export default function ParallaxSection() {
             >
               {(style) => (
                 <animated.div style={style}>
-                  <div class="w-[100%]">
+                  <div class="w-[100%] relative">
                     <img
                       src={require("../Theme/Img/Parallax/trees1.png")}
                       alt="trees1"
-                      style={{ width: "100%", backgroundSize: "cover" }}
+                      style={{
+                        width: "100%",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        top: "-111px",
+                        height: "1011px",
+                      }}
                     />
                   </div>
                 </animated.div>
@@ -126,11 +142,16 @@ export default function ParallaxSection() {
             >
               {(style) => (
                 <animated.div style={style}>
-                  <div class="w-[100%]">
+                  <div class="w-[100%] relative">
                     <img
                       src={require("../Theme/Img/Parallax/trees.png")}
                       alt="trees1"
-                      style={{ width: "100%", backgroundSize: "cover" }}
+                      style={{
+                        width: "100%",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        height: "900px",
+                      }}
                     />
                   </div>
                 </animated.div>
@@ -154,11 +175,16 @@ export default function ParallaxSection() {
             >
               {(style) => (
                 <animated.div style={style}>
-                  <div class="w-[100%]">
+                  <div class="w-[100%] relative">
                     <img
                       src={require("../Theme/Img/Parallax/samurai.png")}
                       alt="samurai"
-                      style={{ width: "100%", backgroundSize: "cover" }}
+                      style={{
+                        width: "100%",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        height: "900px",
+                      }}
                     />
                   </div>
                 </animated.div>
@@ -182,16 +208,50 @@ export default function ParallaxSection() {
             >
               {(style) => (
                 <animated.div style={style}>
-                  <div class="w-[100%]">
+                  <div class="w-[100%] relative">
                     <img
                       src={require("../Theme/Img/Parallax/samurai1.png")}
                       alt="trees1"
-                      style={{ width: "100%", backgroundSize: "cover" }}
+                      style={{
+                        width: "100%",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        height: "900px",
+                      }}
                     />
                   </div>
                 </animated.div>
               )}
             </Spring>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0.9}>
+            <Spring
+              delay={2000}
+              config={{ duration: 1000 }}
+              from={{
+                top: "33%",
+                width: "100%",
+                position: "absolute",
+                zIndex: 2,
+                opacity: 0,
+              }}
+              to={{
+                top: "13%",
+                width: "100%",
+                position: "relative",
+                zIndex: 2,
+                opacity: 1,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <HeaderRescription />
+                </animated.div>
+              )}
+            </Spring>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1}>
+            <div class="bg-[#2D061B] h-[900px]"></div>
           </ParallaxLayer>
         </Parallax>
       </div>

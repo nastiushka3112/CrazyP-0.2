@@ -20,9 +20,9 @@ export default function Main() {
 
   return (
     <div>
-      <div class="bg-headImage bg-co bg-cover bg-center h-[1101.45px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px]">
-			{/* <div class="h-[1101.45px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px]"> */}
-        <Spring
+      {/* <div class="bg-headImage bg-co bg-cover bg-center h-[1101.45px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px]"> */}
+      <div class="h-[900px] max-[420px]:bg-mobileBg max-[420px]:h-[915.45px] relative bg-[#2D061B]">
+        {/* <Spring
           delay={500}
           config={{ duration: 1000 }}
           from={{
@@ -45,8 +45,8 @@ export default function Main() {
               <HeaderRescription />
             </animated.div>
           )}
-        </Spring>
-        {/* <Parallax /> */}
+        </Spring> */}
+          <Parallax />
         {/* <HeaderRescription />  */}
       </div>
       <div class="bg-samurai flex justify-center flex-col pb-[80px] bg-cover  relative  overflow-hidden">
