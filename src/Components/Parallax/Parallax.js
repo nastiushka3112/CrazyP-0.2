@@ -23,50 +23,175 @@ export default function ParallaxSection() {
             height: "1101.45px",
           }}
         >
-          {/* <ParallaxLayer offset={0} speed={0.75} factor={3}>
-          <Bg />
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.25} factor={3}>
-          <Trees />
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5} factor={3}>
-          <Samurai />
-        </ParallaxLayer> */}
           <ParallaxLayer offset={0} speed={0.75}>
-            <div class="w-[100%]">
-              <img
-                src={require("../Theme/Img/Parallax/bg1.png")}
-                alt="trees1"
-                style={{
-                  width: "100%",
-                  paddingBottom: "300px",
-                  backgroundSize: "cover",
-                  height: "100%",
-                }}
-              />
-            </div>
+            <Spring
+              delay={500}
+              config={{ duration: 2100 }}
+              from={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 0,
+              }}
+              to={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 1,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <div class="w-[100%]">
+                    <img
+                      src={require("../Theme/Img/Parallax/bg1.png")}
+                      alt="trees1"
+                      style={{ width: "100%", backgroundSize: "cover" }}
+                    />
+                  </div>
+                </animated.div>
+              )}
+            </Spring>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0.75}>
+            <Spring
+              delay={500}
+              config={{ duration: 2100 }}
+              from={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 1,
+              }}
+              to={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 0,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <div class="w-[100%]">
+                    <img
+                      src={require("../Theme/Img/Parallax/bg.png")}
+                      alt="samurai"
+                      style={{ width: "100%", backgroundSize: "cover" }}
+                    />
+                  </div>
+                </animated.div>
+              )}
+            </Spring>
           </ParallaxLayer>
           <ParallaxLayer offset={0} speed={0.25}>
-            <div class="w-[100%]">
-              <img
-                src={require("../Theme/Img/Parallax/trees1.png")}
-                alt="trees1"
-                style={{
-                  width: "100%",
-                  paddingBottom: "300px",
-                  backgroundSize: "cover",
-                }}
-              />
-            </div>
+            {" "}
+            <Spring
+              delay={500}
+              config={{ duration: 2500 }}
+              from={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 0,
+              }}
+              to={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 1,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <div class="w-[100%]">
+                    <img
+                      src={require("../Theme/Img/Parallax/trees1.png")}
+                      alt="trees1"
+                      style={{ width: "100%", backgroundSize: "cover" }}
+                    />
+                  </div>
+                </animated.div>
+              )}
+            </Spring>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0.25}>
+            {" "}
+            <Spring
+              delay={500}
+              config={{ duration: 2500 }}
+              from={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 1,
+              }}
+              to={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 0,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <div class="w-[100%]">
+                    <img
+                      src={require("../Theme/Img/Parallax/trees.png")}
+                      alt="trees1"
+                      style={{ width: "100%", backgroundSize: "cover" }}
+                    />
+                  </div>
+                </animated.div>
+              )}
+            </Spring>
           </ParallaxLayer>
           <ParallaxLayer offset={0} speed={0.5}>
-            <div class="w-[100%]">
-              <img
-                src={require("../Theme/Img/Parallax/samurai1.png")}
-                alt="trees1"
-                style={{ width: "100%", backgroundSize: "cover" }}
-              />
-            </div>
+            <Spring
+              delay={500}
+              config={{ duration: 3000 }}
+              from={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 1,
+              }}
+              to={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 0,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <div class="w-[100%]">
+                    <img
+                      src={require("../Theme/Img/Parallax/samurai.png")}
+                      alt="samurai"
+                      style={{ width: "100%", backgroundSize: "cover" }}
+                    />
+                  </div>
+                </animated.div>
+              )}
+            </Spring>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0.5}>
+            <Spring
+              delay={500}
+              config={{ duration: 3000 }}
+              from={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 0,
+              }}
+              to={{
+                width: "100%",
+                zIndex: 2,
+                opacity: 1,
+              }}
+            >
+              {(style) => (
+                <animated.div style={style}>
+                  <div class="w-[100%]">
+                    <img
+                      src={require("../Theme/Img/Parallax/samurai1.png")}
+                      alt="trees1"
+                      style={{ width: "100%", backgroundSize: "cover" }}
+                    />
+                  </div>
+                </animated.div>
+              )}
+            </Spring>
           </ParallaxLayer>
         </Parallax>
       </div>
