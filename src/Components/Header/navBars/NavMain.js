@@ -34,14 +34,16 @@ export default function NavMain() {
               </a>
             </li>
             <li class="cursor-pointer">
-              <a href="/" class="font-main text-white text-lg">
+						<NavLink to={"/blog"}>
+              <p class="font-main text-white text-lg">
                 Blog
-              </a>
+              </p>
+							</NavLink>
             </li>
             <li class="cursor-pointer">
-              <a href="/" class="font-main text-white text-lg">
-                Order tracking
-              </a>
+                <a href="/" class="font-main text-white text-lg">
+                  Order tracking
+                </a>
             </li>
           </ul>
         </div>

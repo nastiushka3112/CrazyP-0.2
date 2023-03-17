@@ -24,7 +24,7 @@ export default function Header() {
     );
   }
 
-  if (page === "create") {
+  else {
     return <NavCreate />;
   }
 }

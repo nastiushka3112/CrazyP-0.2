@@ -32,6 +32,7 @@ module.exports = {
         samuraiParallax:
           "url('/src/Components/Theme/Img/Parallax/samurai.png')",
         mobileBg: "url('/src/Components/Theme/Img/MobileBg.png')",
+				blogBg: "url('/src/Components/Theme/Img/blog.png')"
       },
       colors: {
         "main-color": "#2D061B",
