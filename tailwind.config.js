@@ -24,7 +24,7 @@ module.exports = {
         variant2img: "url('/src/Components/Theme/Img/variant2img.png')",
         questionImage: "url('/src/Components/Theme/Img/question.png')",
         showcase: "url('/src/Components/Theme/Img/ShowCase.png')",
-				showcasemb: "url('/src/Components/Theme/Img/ShowCaseMb.png')",
+        showcasemb: "url('/src/Components/Theme/Img/ShowCaseMb.png')",
         testimonials: "url('/src/Components/Theme/Img/Testimonials.png')",
         bgParallax: "url('/src/Components/Theme/Img/Parallax/bg.png')",
         bg2Parallax: "url('/src/Components/Theme/Img/Parallax/bg1.png')",
@@ -32,7 +32,9 @@ module.exports = {
         samuraiParallax:
           "url('/src/Components/Theme/Img/Parallax/samurai.png')",
         mobileBg: "url('/src/Components/Theme/Img/MobileBg.png')",
-				blogBg: "url('/src/Components/Theme/Img/blog.png')"
+        blogBg: "url('/src/Components/Theme/Img/blog.png')",
+        blogCard:
+          "linear-gradient(179.83deg, rgba(45, 6, 27, 0.18) -18.38%, rgba(45, 6, 27, 0.83) 81.1%);",
       },
       colors: {
         "main-color": "#2D061B",
@@ -44,6 +46,8 @@ module.exports = {
         "t-pink": "#FDE3B5",
         "bg-main": "#2D061B",
         modal: "rgba(0, 0, 0, 0.62)",
+        cardElFrom: "rgba(45, 6, 27, 0.18)",
+        cardElTo: "rgb(45 6 27 / 85%)",
       },
       boxShadow: {
         "card-shadow":
