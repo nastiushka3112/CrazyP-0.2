@@ -46,16 +46,16 @@ export default function Blog() {
         </div>
       </div>
       <div>
-        <div class="flex flex-wrap gap-[32px]">
+        <div class="flex flex-wrap gap-[32px] px-[5%] pt-[100px] pb-[201px]">
           {data.map((el) => (
-            <div class="w-[373px] h-[460px] bg-slate-600 flex items-end flex-col justify-between text-left rounded-[15px]">
+            <div class="w-[373px] h-[460px] bg-slate-600 flex items-end flex-col justify-between text-left rounded-[15px] cursor-pointer">
               <div>
                 <p class="font-textSec text-[18px] leading-[26px] text-white pt-[19px] pr-[16px]">
                   {el.data}
                 </p>
               </div>
-              <div>
-                <h1 class="font-mainText text-white text-[32px] leading-[36px]">
+              <div class="px-[16px] pb-[26px]">
+                <h1 class="font-mainText text-white text-[32px] leading-[36px] pb-[9px]">
                   {el.name}
                 </h1>
                 <p class="font-textSec text-[18px] leading-[26px] text-[#999393]">
