@@ -15,6 +15,15 @@ export default function Blog() {
     return post.content.split(" ").slice(0, 20).join(" ") + "...";
   });
 
+  const elementsCounter = () => {
+    let count = 0;
+    count++;
+    if (count === 2) {
+      count = 0;
+    }
+    console.log("AGA", count);
+  };
+
   return (
     <div class="">
       <div class="bg-blogBg bg-cover h-[274px] flex justify-center text-center items-center">
