@@ -6,12 +6,12 @@ export default function BurgerModal() {
   const page = useSelector((state) => state.helpers.page);
   return (
     <>
-      {page == "create" ? (
-        <div class="w-[100%] h-[500px] absolute bg-main-color flex justify-center flex-col z-20">
+      {page == "main" ? (
+        <div class="w-[100%] h-[500px] absolute bg-main-color mt-[85px] flex justify-center flex-col z-20">
           <Menu />
         </div>
       ) : (
-        <div class="w-[100%] h-[500px] absolute bg-main-color mt-[85px] flex justify-center flex-col z-20">
+        <div class="w-[100%] h-[500px] absolute bg-main-color flex justify-center flex-col z-20">
           <Menu />
         </div>
       )}
