@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../store/helpers/helpersSlice";
 import postlist from "../../posts.json";
-import { NavLink } from "react-router-dom";
+import Card from "./Components/Card";
 
 export default function Blog() {
   const dispatch = useDispatch();
@@ -14,15 +14,6 @@ export default function Blog() {
   const excerptList = postlist.map((post) => {
     return post.content.split(" ").slice(0, 20).join(" ") + "...";
   });
-
-  const elementsCounter = () => {
-    let count = 0;
-    count++;
-    if (count === 2) {
-      count = 0;
-    }
-    console.log("AGA", count);
-  };
 
   return (
     <div class="">
@@ -38,31 +29,14 @@ export default function Blog() {
         </div>
       </div>
       <div>
-        <div class="flex flex-wrap gap-[32px] px-[5%] pt-[100px] pb-[201px]">
+        <div class="flex flex-wrap gap-[32px] px-[5%] pt-[100px] pb-[201px] items-center">
           {postlist.length &&
             postlist.map((post, i) => (
-              <NavLink to={`/post/${post.id}`}>
-                <div
-                  class="w-[373px] h-[460px] bg-gradient-to-r from-cardElFrom to-cardElTo flex items-end flex-col justify-between text-left rounded-[15px] cursor-pointer"
-                  style={{
-                    backgroundImage: `url(${post.thumbnail})`,
-                  }}
-                >
-                  <div>
-                    <p class="font-textSec text-[18px] leading-[26px] text-white pt-[19px] pr-[16px]">
-                      {post.date}
-                    </p>
-                  </div>
-                  <div class="px-[16px] pb-[26px]">
-                    <h1 class="font-mainText text-white text-[32px] leading-[36px] pb-[9px]">
-                      {post.title}
-                    </h1>
-                    <p class="font-textSec text-[18px] leading-[26px] text-[#999393]">
-                      {excerptList[i]}
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
+              <Card
+                post={post}
+                i={i}
+                excerptList={excerptList}
+              />
             ))}
           <div></div>
         </div>
