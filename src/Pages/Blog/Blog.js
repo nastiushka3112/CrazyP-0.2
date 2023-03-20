@@ -49,21 +49,8 @@ export default function Blog() {
               ))}
         </div>
       </div>
-      <div class="pb-[164px] flex gap-[8px] justify-center">
-        {Arr.slice(0, 4).map((el) => (
-          <Pagination num={el} />
-        ))}
-        <div class="bg-[#C5C3C3] w-[64px] h-[64px] flex justify-center items-center rounded-[50%] cursor-pointer">
-          <p class="text-mainText text-[#433E3E] text-[32px]">...</p>
-        </div>
-        <div class="bg-[#C5C3C3] w-[64px] h-[64px] flex justify-center items-center rounded-[50%] cursor-pointer">
-          <p
-            class="text-mainText text-[#433E3E] text-[32px]"
-            onClick={() => nextP()}
-          >
-            <Next />
-          </p>
-        </div>
+      <div class="pb-[164px]">
+        <Pagination />
       </div>
     </div>
   );

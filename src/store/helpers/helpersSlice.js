@@ -6,6 +6,7 @@ const initialState = {
   mobile: true,
   page: null,
   step: 0,
+  pagination: 1,
 };
 
 const helpersSlice = createSlice({
@@ -27,10 +28,19 @@ const helpersSlice = createSlice({
     setStep(state, action) {
       state.step = action.payload;
     },
+    setPagination(state, action) {
+      state.pagination = action.payload;
+    },
   },
 });
 
-export const { openModal, addMobile, openBurger, setPage, setStep } =
-  helpersSlice.actions;
+export const {
+  openModal,
+  addMobile,
+  openBurger,
+  setPage,
+  setStep,
+  setPagination,
+} = helpersSlice.actions;
 
 export default helpersSlice.reducer;
