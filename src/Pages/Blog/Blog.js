@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../store/helpers/helpersSlice";
 import postlist from "../../posts.json";
@@ -6,6 +6,8 @@ import Card from "./Components/Card";
 import Next from "../../Components/Theme/Icons/Next";
 
 export default function Blog() {
+	const [countStart, setCountStart] = useState(0);
+  const [countEnd, setCountEnd] = useState(12);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -15,6 +17,12 @@ export default function Blog() {
   const excerptList = postlist.map((post) => {
     return post.content.split(" ").slice(0, 20).join(" ") + "...";
   });
+
+
+	//! NEED TO DO THIS
+  const nextP = () => {
+    setCountStart(countEnd + 12);
+  };
 
   return (
     <div class="">
@@ -30,11 +38,13 @@ export default function Blog() {
         </div>
       </div>
       <div>
-        <div class="flex flex-wrap gap-[32px] px-[5%] pt-[100px] pb-[201px] items-center">
+        <div class="flex flex-wrap gap-[32px] px-[5%] pt-[100px] pb-[201px] items-center justify-center">
           {postlist.length &&
-            postlist.map((post, i) => (
-              <Card post={post} i={i} excerptList={excerptList} />
-            ))}
+            postlist
+              .slice(countStart, countEnd)
+              .map((post, i) => (
+                <Card post={post} i={i} excerptList={excerptList} />
+              ))}
         </div>
       </div>
       <div class="pb-[164px] flex gap-[8px] justify-center">
@@ -48,7 +58,10 @@ export default function Blog() {
           <p class="text-mainText text-[#433E3E] text-[32px]">...</p>
         </div>
         <div class="bg-[#C5C3C3] w-[64px] h-[64px] flex justify-center items-center rounded-[50%] cursor-pointer">
-          <p class="text-mainText text-[#433E3E] text-[32px]">
+          <p
+            class="text-mainText text-[#433E3E] text-[32px]"
+            onClick={() => nextP()}
+          >
             <Next />
           </p>
         </div>
