@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../store/helpers/helpersSlice";
 import postlist from "../../posts.json";
 import Card from "./Components/Card";
-import Next from "../../Components/Theme/Icons/Next";
 import Pagination from "./Components/Pagination";
 
 export default function Blog() {
-  const [countStart, setCountStart] = useState(0);
-  const [countEnd, setCountEnd] = useState(12);
   const dispatch = useDispatch();
+	const activeP = useSelector((state) => state.helpers.pagination);
 
   useEffect(() => {
     dispatch(setPage("blog"));
@@ -19,13 +17,16 @@ export default function Blog() {
     return post.content.split(" ").slice(0, 20).join(" ") + "...";
   });
 
-  //! NEED TO DO THIS
+
   const nextP = () => {
-    setCountStart(countEnd + 12);
+    if(activeP == 1 ) {
+			return 0
+		}else{
+			return (activeP - 1 ) * 12
+		}
   };
 
-  const Arr = [1, 2, 3, 4, 5, 6];
-
+	
   return (
     <div class="">
       <div class="bg-blogBg bg-cover h-[274px] flex justify-center text-center items-center">
@@ -43,14 +44,14 @@ export default function Blog() {
         <div class="flex flex-wrap gap-[32px] px-[5%] pt-[100px] pb-[201px] items-center justify-center">
           {postlist.length &&
             postlist
-              .slice(countStart, countEnd)
+              .slice(nextP(), activeP * 12)
               .map((post, i) => (
                 <Card post={post} i={i} excerptList={excerptList} />
               ))}
         </div>
       </div>
       <div class="pb-[164px]">
-        <Pagination />
+        <Pagination elements={postlist.length} />
       </div>
     </div>
   );

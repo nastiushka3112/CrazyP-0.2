@@ -3,12 +3,18 @@ import { setPagination } from "../../../store/helpers/helpersSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Next from "../../../Components/Theme/Icons/Next";
 
-export default function Pagination() {
+export default function Pagination({ elements }) {
   // const [activeP, setActiveP] = useState(1);
   const dispatch = useDispatch();
   const activeP = useSelector((state) => state.helpers.pagination);
 
   const Arr = [1, 2, 3, 4, 5, 6];
+
+  const summPages = () => {
+    const a = elements / 12;
+    return Math.ceil(a);
+  };
+  console.log(summPages(), elements);
 
   const Numbers = (num) => {
     return (
