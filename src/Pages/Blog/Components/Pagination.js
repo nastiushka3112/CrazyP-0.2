@@ -4,16 +4,25 @@ import { useDispatch, useSelector } from "react-redux";
 import Next from "../../../Components/Theme/Icons/Next";
 
 export default function Pagination({ elements }) {
-  // const [activeP, setActiveP] = useState(1);
+  const [fromPage, setFromPage] = useState(0);
   const dispatch = useDispatch();
   const activeP = useSelector((state) => state.helpers.pagination);
 
-  const Arr = [1, 2, 3, 4, 5, 6];
-
+  const Arr = [];
+	
   const summPages = () => {
     const a = elements / 12;
     return Math.ceil(a);
   };
+
+	if(summPages() > 4) {
+		setFromPage(fromPage + 1)
+	}
+
+	for (let i = 1; i <= summPages(); i++){
+		Arr.push(i)
+	}
+
   console.log(summPages(), elements);
 
   const Numbers = (num) => {
@@ -38,7 +47,7 @@ export default function Pagination({ elements }) {
 
   return (
     <div class="flex gap-[8px] justify-center">
-      {Arr.slice(0, 4).map((el) => Numbers(el))}
+      {Arr.slice(fromPage, summPages()).map((el) => Numbers(el))}
       <div class="bg-[#C5C3C3] w-[64px] h-[64px] flex justify-center items-center rounded-[50%] cursor-pointer">
         <p class="text-mainText text-[#433E3E] text-[32px]">...</p>
       </div>
